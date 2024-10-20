@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">Alameda 181</string>
+    <string name="name_first">Alameda</string>
+    <string name="name_second">181</string>
+    <string name="slide_menu">Menú</string>
+    <string name="menu_more">Más Opciones</string>
+    <string name="schedules">Horarios</string>
+    <string name="payment_administration">Pago Administración</string>
+    <string name="kind_unit">Conjunto Residencial</string>
+    <string name="address">calle 181 # 18b - 82</string>
+    <string name="description_logo">Logo Conjunto Residencial Alameda 181</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="go_pse">Ir a portal de pagos</string>
+    <string name="schedule_administrator">Horarios Administrador</string>
+    <string name="contact_number">Números de Contacto</string>
+    <string name="contact_email">Correo Electrónico de Contacto</string>
+    <string name="schedule_movement">Horarios de Mudanza</string>
+    <string name="schedule_repair">Horarios de Reparaciones Locativas e Instalación Servicios</string>
+    <string name="repair_information">Información Arreglos Locativos e Instalación de Servicios</string>
+    <string name="general_information">Información General</string>
+    <string name="schedule_movement_date"><![CDATA[
+    Lunes a Viernes de 8Am a 4pm <br/> Sábado de 8Am a 12pm
+    ]]></string>
+    <string name="holiday_dont_allow">Domingos y Festivos no es permitido</string>
+    <string name="schedule_out_dont_allow"><![CDATA[
+    Fuera de este horario <b>NO</b> es permitido
+    ]]></string>
+    <string name="schedule_movement_information">Información de la Mudanza</string>
+    <string name="schedule_movement_info_detail">
+        <![CDATA[
+        Toda Mudanza grande o pequeña tiene Horiario.<br/>Debe estar autorizado por el propietario o inmobiliaria y administración con <b>5 días de anticipación.</b><br/>Deben dejar un deposito.<br/>Pregunta en portería el formato.
+    ]]></string>
+    <string name="regulation_info_detail">
+        <![CDATA[
+            Vivir en <b>Propiedad Horizontal</b> nos obliga a cumplir ciertas normas<br/>Existe un <b>Manual de Convivencia</b> aprobado por los Copropietarios, donde están estipuladas las normas de convivencia en la Propiedad Horizontal, el cual busca mantener un equilibrio entre todos los residentes, haciendo que nuestra estancia sea agradable día a día.<br/> La inobservancia a estas normas puede generar <b>multas y sanciones de índole social y/o económica.</b><br/>Debe dejar un deposito.
+    ]]></string>
+
+    <string name="require_for_movement">Requisitos para Mudanzas</string>
+    <string name="require_for_movement_detail">
+        <![CDATA[
+        <ol start="1">
+            <li>Notificar a la Administración sobre la mudanza autorizada por el propietario o tenedor del inmueble <b>mínimo con 3 días de anticipación.</b>
+             En el correo electrónico de la administración</li>
+             <li>
+             Debe estar al día con la administración por todo concepto.<br/> Solicitar paz y salvo.
+             </li>
+             <li>
+               Ingreso o salida de todo tipo de - mobiliario - enseres - cajas - deben estar autorizados.
+             </li>
+             <li>
+             Respetar el horario indicado.
+             </li>
+             <li>
+              Antes de iniciar la mudanza debe llenar el formato de salida en portería y <b>dejar un deposito</b> esto con el fin de garantizar que no existan daños en las áreas comunes. <br/>
+              Una vez se finalice la mudanza, el guarda verificara las áreas comunes, que estén limpias y que no presenten daños y se procede a realizar la devolución del dinero.
+             </li>
+        </ol>
+        ]]>
+    </string>
+    <string name="repair_information_detail">
+        <![CDATA[
+            Arreglos Locativos e Instalaciones de Internet <br/>
+            Debe ser notificado por correo a la administración y debe estar autorizado.<br/>
+            Mínimo con 3 días de anticipación
+        ]]>
+    </string>
+    <string name="general_information_detail">
+        <![CDATA[
+        Señores Residentes<br/>
+        Estos son los medios de comunuicación con el conjunto Residencial<b/>
+        <ol>
+            <li>
+                Portería <br/><b>601 573 08 96 - 321 292 42 42 - 316 525 26 50 </b><br/>
+                De estos números lo estarán llamando a anunciar sus visitas y domicilios
+                <br/>
+            </li>
+            <li>
+                Whatsapp Administración<br/> <b>302 363 42 93</b> <br/>
+                (tenga en presente los horarios de atención)
+                <br/>
+            </li>
+            <li>
+                Correo Electrónico <br/><b>admonalameda181@gmail.com</b><br/>
+                Toda solicitud o autorizacion debe ser notificados por correo a administración Mínimo con 3 días de anticipación
+                <br/>
+            </li>
+            <li>
+                Página del conjunto <br/><b><link url="www.alameda181.com">www.alameda181.com</link></b>
+                <br/>
+            </li>
+        </ol>
+        <br/>
+        <b>Puede realizar sus pagos de administración por PSE</b>
+        ]]>
+    </string>
+        <string name="admin_email">dmonalameda181@gmail.com</string>
+        <string name="menu_home">Home</string>
+        <string name="menu_location">Ubicación</string>
+        <string name="menu_general_inforamtion">Información Generál</string>
+        <string name="menu_payment_information">Información Pagos</string>
+        <string name="menu_movement_information">Información Mudanzas</string>
+        <!--<string name="menu_renting_information">Información Alquiler</string>-->
+        <string name="menu_local_repairs">Reparaciones Locativas</string>
+        <string name="menu_regulation">Reglamento</string>
+        <string name="number_contact">601 573 08 96</string>
+        <string name="whatsapp_number">+573023634293</string>
+        <string name="email_contact">admonalameda181@gmail.com</string>
+
+
+    <string name="home_info">
+        lorereereasdasd
+        adasdasdasdadasda
+        asdasdasd asdasdasd asdasda
+        s dasdasdasd adasdasdasdassdasdass
+        asdasdadad
+        ad asd asdasd
+        asdasd
+        a
+
+        adasdasd
+    </string>
+
+    <string name="payment_link">
+        https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=4601&amp;searchedCategoryId=&amp;searchedAgreementName=CONJUNTO%20RESIDENCIAL%20ALAMEDA%20181%20P%20H
+    </string>
+
+    <string name="payment">
+        Redireccionando a Portal de Pagos
+    </string>
+
+    <string name="pse_info">
+        <![CDATA[
+        <p align="center">
+        PSE es un servicio de <b>ACH Colombia</b> que le permite realizar el <b>pago de administración</b> desde la comodidad de su casa u oficina.
+        </p>
+        ]]>
+    </string>
+
+    <string name="payment_info">
+        <![CDATA[
+        Una vez se da clic en el botón anterior se hace lo siguiente:
+<br/>
+<ol start="1">
+<li>
+    Se ingresa torre y apartamento, seguidos y en números, por ejemplo, si la torre es la número 1 y el apartamento el número 101, entonces se digita <b>1101</b>
+    </li>
+    <li>
+    Seguidamente se confirma el mismo número de torre y apartamento, igual que se digitó anteriormente.
+    </li>
+    <li>
+    Luego se digita el valor a pagar, el cual se encuentra en la cuenta de cobro entregada en los primeros dias de cada mes, lo cual corresponde a cuota de sostenimiento, cuota de mantenimiento de adoquines comunales, cuota mantenimiento de adoquines de visitantes, intereses de mora, cuotas extraordinarias, etc.
+    </li>
+    <li>
+    En la descripción se digita a que corresponde el pago que se esta realizando, por ejemplo, ADMINISTRACION MES DE NOVIEMBRE DE 2019.
+    </li>
+    <li>
+    Luego se da clic en el boton de <b>CONTINUAR</b>.
+    </li>
+    <li>
+    Seguidamente la pagina muestra que se seleccione el medio de pago con el cual se va a realizar,  el cual puede ser:
+    </li>
+    <li>
+    <ol><li>
+        <b>Banco Caja Social - Personas</b>: Esta opcion se usa para quienes tengan cuenta directamente en el banco a nombre personal y se hace un debito a su cuenta para realizar el pago.
+        </li><li>
+        <b>Banco Caja Social - Empresas</b>: Esta opcion se usa para quienes tengan cuenta directamente en el banco a nombre de su propia empresa  y se hace un debito a su cuenta para realizar el pago.
+        </li><li>
+        <b>PSE</b>: Esta opcion se usa para quienes tengan cuenta en otra entidad financiera y se hace un débito a su cuenta para realizar el pago.
+        </li>
+        </ol>
+        </li>
+    <li>
+    Para el caso de <b>PSE</b>, se seleccion tipo de persona natural, y luego se busca su banco.
+    </li><li>
+    Se digita el correo electrónico y el numero de celular.
+    </li><li>
+    Se da clic en <b>continuar</b>
+    </li><li>
+    Luego se da clic en pagar.
+    </li><li>
+    Seguidamente direcciona a la pagina de <b>PSE</b>, se digita el correo electronico registrado y clic en <b>IR AL BANCO</b>.
+    </li><li>
+    Una vez dentro de la pagina de su banco, se digita el nombre de <b>usuario y la contraseña</b> y continua el pago hasta finalizar el proceso, enviando la confirmación del pago.
+    </li>
+        ]]>
+    </string>
+    <string name="regulation_link">https://www.alameda181.com/images/PDF/Manual_Convivencia_CR_Alameda_181_PH-2021_2.pdf</string>
+    <string name="regulation_info">Descarga PDF</string>
+    <string name="regulation_title">Manual de Convivencia</string>
+    <string name="web_site_link">https://www.alameda181.com/</string>
+
+    <string name="state">Bogotá - Cundinamarca</string>
+    <string name="download_file_name">Descargar Archivo %s</string>
+
+    <string name="doc_files_title">Documentos</string>
+    <string name="no_network_connection">Esta funcionalidad solo funciona con acceso a internet, conectese a una red de WiFi o activa los datos en el mobile</string>
+    <string name="description_folder_documents">
+        En este espacio podrá encontrar la información relacionadas a los documentos y otros anexos sobre el manejo del Conjunto Residencial Alameda 181
+    </string>
+    <string name="there_arent_any_documents_to_show">No hay documentos para mostrar</string>
+    <string name="name_file">Nombre Archivo: </string>
+    <string name="create_date">Fecha Creación Archivo: </string>
+    <string name="version_file">Versión del Archivo: </string>
+    <string name="file_type">Tipo de Archivo: </string>
+    <string name="description_file">Descripción:</string>
+    <string name="menu_documents_list">Lista Documentos</string>
+    <string name="menu_pqrs">Enviar PQR\'s</string>
+    <string name="msg_pqr_template">
+        <![CDATA[
+                        Estimada Conjunto Residencial Alameda 181,\n\n
+
+                        Por medio del presente mensaje, deseo presentar una [Petición/Queja/Reclamo] relacionada con [Asunto específico del PQR].\n\n
+
+                        [Brindar una descripción detallada del PQR, incluyendo la fecha, hora, lugar y las personas involucradas, si aplica.]\n\n
+
+                        [Especificar la solicitud que se realiza a la Unidad Residencial CR Alameda 181. Por ejemplo, solicitar una reparación, una aclaración, una disculpa, etc.]\n\n
+
+                        Agradezco su atención a este PQR y espero una pronta respuesta y solución.\n\n
+
+                        Atentamente,\n\n
+
+                        [nombre completo]\n\n
+                        Tel:. [número de contacto]\n\n
+        ]]>
+    </string>
+    <string name="pqr_subject_template">PQR  - [Asunto específico del PQR]</string>
+    <string name="theres_not_email_app_installed">No hay aplicación de correos</string>
+    <string name="loading">...Cargando...</string>
+</resources>
