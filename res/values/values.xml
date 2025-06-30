@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_page">5.dp</dimen>
+    <dimen name="card_padding_left_right">4.dp</dimen>
+    <dimen name="card_padding_top_bottom">10.dp</dimen>
+    <dimen name="padding_column_schedule">5.dp</dimen>
+    <dimen name="spacer_between">15.dp</dimen>
+    <dimen name="spacer_min_between">5.dp</dimen>
+    <dimen name="padding_box_schedule_left_right">20.dp</dimen>
+    <dimen name="padding_box_schedule_top_bottom">11.dp</dimen>
+</resources>
