@@ -24,7 +24,7 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeScreenModel @Inject constructor(private val application:Application): AndroidViewModel(application ) {
 
-    private var carouselPort: ICarousel?= EntryPoints.get(application,MyEntryPoint::class.java).provideInboundICarouselByImpl()
+    private var carouselPort: ICarousel?= EntryPoints.get(application,MyEntryPoint::class.java).provideInboundICarousel()
 
     private val _uiState = MutableStateFlow(HomeScreenState())
     val uiState: StateFlow<HomeScreenState> = _uiState.asStateFlow()
