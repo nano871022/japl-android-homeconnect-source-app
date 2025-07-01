@@ -42,7 +42,6 @@ import co.com.japl.ui.theme.MaterialThemeComposeUI
 import co.com.alameda181.unidadresidencialalameda181.R
 import co.com.japl.homeconnect.model.Documents.DocumentListModelView
 import co.japl.android.homeconnect.model.models.Document
-
 import co.com.japl.ui.theme.values.Dimensions
 
 
