@@ -9,7 +9,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import co.com.japl.homeconnect.module.MyEntryPoint
-import co.com.japl.homeconnect.core.adapter.ports.inbound.interfaces.ICarousel
+import co.japl.android.homeconnect.model.interfaces.inbound.ICarousel
 import dagger.hilt.EntryPoints
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -20,11 +20,12 @@ import java.util.Collections
 import javax.inject.Inject
 
 
-@RequiresApi(34)
+
 @HiltViewModel
 class HomeScreenModel @Inject constructor(private val application:Application): AndroidViewModel(application ) {
 
-    var carouselPort:ICarousel?=EntryPoints.get(application,MyEntryPoint::class.java).carouselPort()
+    private var carouselPort: ICarousel?= EntryPoints.get(application,MyEntryPoint::class.java).provideInboundICarouselByImpl()
+
     private val _uiState = MutableStateFlow(HomeScreenState())
     val uiState: StateFlow<HomeScreenState> = _uiState.asStateFlow()
 

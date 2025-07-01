@@ -1,6 +1,7 @@
 package co.com.japl.homeconnect.module
 
-import co.com.japl.homeconnect.core.adapter.ports.inbound.CarouselPort
+import co.com.japl.db.DbHelper
+import co.japl.android.homeconnect.model.interfaces.inbound.ICarousel
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -9,5 +10,7 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 interface MyEntryPoint {
 
-    fun carouselPort():CarouselPort
+    fun dbHelper():DbHelper
+
+    fun provideInboundICarousel(): ICarousel
 }

@@ -41,8 +41,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import co.com.japl.ui.theme.MaterialThemeComposeUI
 import co.com.alameda181.unidadresidencialalameda181.R
 import co.com.japl.homeconnect.model.Documents.DocumentListModelView
-import co.com.japl.homeconnect.core.model.Document
-
+import co.japl.android.homeconnect.model.models.Document
 import co.com.japl.ui.theme.values.Dimensions
 
 
@@ -130,7 +129,7 @@ private fun Body(viewModel: DocumentListModelView){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun Item(doc: Document, onClick:(Document)->Unit){
+private fun Item(doc: co.japl.android.homeconnect.model.models.Document, onClick:(co.japl.android.homeconnect.model.models.Document)->Unit){
     val status = remember {mutableStateOf(false)}
     Card (modifier=Modifier.padding(5.dp).height(120.dp)
         ,onClick={
@@ -166,7 +165,7 @@ private fun Item(doc: Document, onClick:(Document)->Unit){
 }
 
 @Composable
-private fun InfoFile(file:Document,showMe:MutableState<Boolean>,download:(Document)->Unit){
+private fun InfoFile(file: co.japl.android.homeconnect.model.models.Document, showMe:MutableState<Boolean>, download:(co.japl.android.homeconnect.model.models.Document)->Unit){
   Dialog(onDismissRequest = { showMe.value = false}) {
       Card (modifier=Modifier.padding(Dimensions.PADDING_TOP)) {
 
@@ -273,16 +272,17 @@ private fun getViewModel(): DocumentListModelView {
     viewModel.loader.value = false
     viewModel.preview = true
     viewModel.list.add(
-        Document(
-        name = "Document 1",
-        url = "https://www.google.com",
-        date = LocalDateTime.now(),
-        version = "1",
+        co.japl.android.homeconnect.model.models.Document(
+            name = "Document 1",
+            url = "https://www.google.com",
+            date = LocalDateTime.now(),
+            version = "1",
             id = "1",
             mimeType = "application/pdf"
-    ))
+        )
+    )
     viewModel.list.add(
-        Document(
+        co.japl.android.homeconnect.model.models.Document(
             name = "Document 2",
             url = "https://www.google.com",
             date = LocalDateTime.now(),
@@ -290,34 +290,38 @@ private fun getViewModel(): DocumentListModelView {
             id = "2",
             mimeType = "application/pdf"
 
-        ))
+        )
+    )
     viewModel.list.add(
-        Document(
+        co.japl.android.homeconnect.model.models.Document(
             name = "Document 3",
             url = "https://www.google.com",
             date = LocalDateTime.now(),
             version = "1",
             id = "3",
             mimeType = "application/pdf"
-        ))
+        )
+    )
     viewModel.list.add(
-        Document(
+        co.japl.android.homeconnect.model.models.Document(
             name = "Document 4",
             url = "https://www.google.com",
             date = LocalDateTime.now(),
             version = "1",
             id = "4",
             mimeType = "application/pdf"
-        ))
+        )
+    )
     viewModel.list.add(
-        Document(
+        co.japl.android.homeconnect.model.models.Document(
             name = "Document 5",
             url = "https://www.google.com",
             date = LocalDateTime.now(),
             version = "1",
             id = "5",
             mimeType = "application/pdf"
-        ))
+        )
+    )
     return viewModel
 }
 

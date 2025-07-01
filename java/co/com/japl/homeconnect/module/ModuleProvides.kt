@@ -6,6 +6,7 @@ import androidx.annotation.RequiresApi
 import co.com.japl.homeconnect.model.HomeScreen.HomeScreenModel
 import co.com.japl.connect.gdrive.drive.GetFilesFromFolderShared
 import co.com.japl.connect.gdrive.firebase.realtime.Realtime
+import co.japl.android.homeconnect.model.interfaces.inbound.ICarousel
 import com.google.firebase.database.FirebaseDatabase
 import dagger.Module
 import dagger.Provides

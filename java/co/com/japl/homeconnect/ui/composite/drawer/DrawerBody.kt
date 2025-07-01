@@ -5,6 +5,8 @@ import android.view.View
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.NavigationDrawerItem
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -16,18 +18,17 @@ import kotlinx.coroutines.launch
 @Composable
 fun DrawerBody(
     menuItems: List<MenuItem>
-    , scope: CoroutineScope
+    , current: String = "home"
     , modifier: Modifier = Modifier
     , onItemClick: (String) -> Unit
 ){
     LazyColumn(modifier = modifier){
         items(menuItems) { menuItem ->
-            DrawerItem( menuItem, modifier = Modifier){
-                scope.launch {
-                }
-                onItemClick(menuItem.route)
-            }
-
+            NavigationDrawerItem(
+                label = { Text(text = menuItem.name) },
+                selected = current == menuItem.route,
+                onClick = { onItemClick(menuItem.route) }
+                , modifier = modifier)
         }
     }
 }
