@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModel
 import co.com.alameda181.unidadresidencialalameda181.R
 import co.com.japl.homeconnect.utils.NetworkUtils
 import co.com.japl.homeconnect.core.adapter.ports.inbound.DocumentPort
-import co.com.japl.homeconnect.core.model.Document
+import co.japl.android.homeconnect.model.models.Document
 
 import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
@@ -22,12 +22,12 @@ class DocumentListModelView @Inject constructor(var documentSvc: DocumentPort? )
     var preview:Boolean = false
     private val _progress = mutableFloatStateOf(0f)
     private val _loader = mutableStateOf(true)
-    private val _list = mutableStateListOf<Document>()
+    private val _list = mutableStateListOf<co.japl.android.homeconnect.model.models.Document>()
     val list get() = _list
     val loader get() = _loader
     val progress get() = _progress
 
-    fun descargar(doc:Document,context:Context){
+    fun descargar(doc: co.japl.android.homeconnect.model.models.Document, context:Context){
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(doc.url))
         context.startActivity(intent).also {
             Toast.makeText(context, context.getString(R.string.download_file_name, doc.name),Toast.LENGTH_SHORT).show()

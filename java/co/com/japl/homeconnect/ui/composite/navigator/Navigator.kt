@@ -16,6 +16,7 @@ import co.com.japl.homeconnect.ui.composite.views.DocumentList
 import co.com.japl.homeconnect.ui.composite.views.GeneralInformation
 import co.com.japl.homeconnect.ui.composite.views.LocalRepairs
 import co.com.japl.homeconnect.ui.composite.views.Location
+import co.com.japl.homeconnect.ui.composite.views.Messages
 import co.com.japl.homeconnect.ui.composite.views.MovementInformation
 import co.com.japl.homeconnect.ui.composite.views.PaymentInformation
 import co.com.japl.homeconnect.ui.composite.views.Regulation
@@ -48,7 +49,7 @@ fun Navigator(navController: NavHostController,modifier:Modifier,context:Context
         composable(DrawerRoutes.HOME.name) { HomeScreen() }
 
         composable(MenuOptions.ABOUT.name){
-            co.com.japl.homeconnect.about.UI.About(BuildConfig.VERSION_NAME)
+            co.com.japl.homeconnect.about.ui.About(BuildConfig.VERSION_NAME, BuildConfig.APPLICATION_ID)
         }
 
         composable(TopMenuOption.SCHEDULES.name){Schedule()}
@@ -72,5 +73,7 @@ fun Navigator(navController: NavHostController,modifier:Modifier,context:Context
         composable (DrawerRoutes.PQRs.name){SendEmailPqrs()}
 
         //composable(DrawerRoutes.RENTAL_INFORMATION.name){ RentalInformation() }
+
+        composable (DrawerRoutes.Messages.name){ Messages() }
     }
 }

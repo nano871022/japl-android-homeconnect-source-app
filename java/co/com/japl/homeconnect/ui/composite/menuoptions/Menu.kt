@@ -1,7 +1,10 @@
 package co.com.japl.homeconnect.ui.composite.menuoptions
 
 import android.content.Context
+import android.content.Intent
+import android.content.res.Configuration
 import android.content.res.Resources
+import android.net.Uri
 import android.view.View
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -54,13 +57,16 @@ fun MenuOptions(expandedRemember:MutableState<Boolean>,onClick: (String) -> Unit
 }
 
 fun getMenu(resource:Resources):List<MenuItem>{
-  return MenuOptions.values().map {
-      MenuItem(name=resource.getString(it.title),iconDrawer=it.icon,route=it.name)
+  return MenuOptions.values().map { opt->
+      opt.url?.takeIf { true }?.let{
+          MenuItem(name=resource.getString(opt.title),iconDrawer=opt.icon,route="", web = resource.getString(opt.url))
+      }?: MenuItem(name=resource.getString(opt.title),iconDrawer=opt.icon,route=opt.name)
   }.toList()
 }
 
 @Composable
 fun MenuItems(menuItem:MenuItem,expandedRemember:MutableState<Boolean>,onClick : (String) -> Unit){
+    val context = LocalContext.current
     DropdownMenuItem(
         text = {
             Row(
@@ -74,14 +80,19 @@ fun MenuItems(menuItem:MenuItem,expandedRemember:MutableState<Boolean>,onClick :
             }
         }
         , onClick = {
-            onClick(menuItem.route)
+            menuItem.web.takeIf { it.isNotBlank()  }?.let {
+                Intent(Intent.ACTION_VIEW, Uri.parse(menuItem.web.trim())).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    context.startActivity(this)
+                }
+            }?:onClick(menuItem.route)
             expandedRemember.value = !expandedRemember.value
         }
     )
 }
 
 @Composable
-@Preview
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_NO, showSystemUi = true, showBackground = true)
 fun previewMenuOptions(){
     MenuOptions( expandedRemember = remember { mutableStateOf(true) }, onClick ={})
 }

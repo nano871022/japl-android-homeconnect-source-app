@@ -1,8 +1,8 @@
 package co.com.japl.homeconnect.model.HomeScreen
 
-import co.com.japl.homeconnect.core.model.Carousel
+import co.japl.android.homeconnect.model.models.Carousel
 
 data class HomeScreenState(
-    val carouselList:List<Carousel> = emptyList()
+    val carouselList:List<co.japl.android.homeconnect.model.models.Carousel> = emptyList()
 
 )

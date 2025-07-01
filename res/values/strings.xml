@@ -226,4 +226,11 @@
     <string name="pqr_subject_template">PQR  - [Asunto específico del PQR]</string>
     <string name="theres_not_email_app_installed">No hay aplicación de correos</string>
     <string name="loading">...Cargando...</string>
+    <string name="menu_main_web">Página Web Unidad</string>
+    <string name="menu_app_web">Página Web App</string>
+    <string name="url_app_web">https://cralameda181.japl.dev</string>
+    <string name="menu_messages">Mensajes Administrador</string>
+    <string name="short_menu_messages">Mensajes</string>
+    <string name="empty_message" />
+    <string name="admin_messages">Mensajes Administración</string>
 </resources>
